@@ -22,3 +22,7 @@
 const passengerName = prompt('Inserisci il tuo Nome:');
 console.log(passengerName);
 
+// Punto 2.                                                 OK
+
+const passengerAge = prompt('Inserisci la tua età:');
+console.log(passengerAge);
