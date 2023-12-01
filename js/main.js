@@ -36,6 +36,17 @@ if(isNaN(passengerAgeNumber)) {
 
 }
 
+if (passengerAgeNumber < 18) {
+    
+    console.log('Sei Minorenne');
+
+} else if (passengerAgeNumber >= 65) {
+
+    console.log('Hai già un piede nella fossa');
+
+}
+
+
 // Punto 3                                                 OK
 
 const distance = prompt('Quanta km devi percorrere?');
@@ -54,3 +65,6 @@ if(isNaN(distanceInNumber)) {
 
 let ticketPrice = (distanceInNumber * 0.21);
 console.log(ticketPrice); 
+
+// Parte b)
+
