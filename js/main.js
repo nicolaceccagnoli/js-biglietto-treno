@@ -20,7 +20,7 @@
 
 // Punto 1.                                                 OK
 
-const passengerName = prompt('Inserisci il tuo Nome:');
+const passengerName = prompt('Inserisci il tuo Nome e il tuo Cognome:');
 console.log(passengerName);
 
 // Punto 2.                                                 OK
@@ -54,9 +54,8 @@ if (passengerAgeNumber < 18) {
 const distance = prompt('Quanta km devi percorrere?');
 console.log(distance);
 
-const distanceInNumber = parseInt(distance);
 
-if(isNaN(distanceInNumber)) {
+if(isNaN(distance)) {
 
     alert('Perfavore inserisci solo caratteri numerici!');
 
@@ -65,23 +64,28 @@ if(isNaN(distanceInNumber)) {
 
 // Parte a)                                                 OK
 
-let ticketPrice = (distanceInNumber * 0.21);
+let ticketPrice = (distance * 0.21);
 console.log(ticketPrice); 
+
+ticketPriceUnder = (ticketPrice * 0.8);
+console.log(ticketPriceUnder);
+
+ticketPriceOver = (ticketPrice * 0.6);
+console.log(ticketPriceOver);
 
 // Parte b) e c)                                            OK
 
 if (passengerAgeNumber < 18) {
 
-    ticketPriceUnder = (ticketPrice * 0.8);
-    console.log(ticketPriceUnder);
+    document.getElementById('your-ticket').innerHTML = ticketPriceUnder;
 
 } else if (passengerAgeNumber >= 65) {
 
-    ticketPriceOver = (ticketPrice * 0.6);
-    console.log(ticketPriceOver);
+    document.getElementById('your-ticket').innerHTML = ticketPriceOver;
+    
 
+} else {
+
+    document.getElementById('your-ticket').innerHTML = ticketPrice;
+    
 }
-
-// Punto 4
-
-document.getElementById('your-ticket').innerHTML = (ticketPrice);
