@@ -44,6 +44,8 @@ if (passengerAgeNumber < 18) {
 
     console.log('Hai già un piede nella fossa');
 
+} else {
+    console.log('Non hai diritto a nessuno sconto, devi pagare per intero.');
 }
 
 
@@ -61,10 +63,21 @@ if(isNaN(distanceInNumber)) {
 }
 
 
-// Parte a)
+// Parte a)                                                 OK
 
 let ticketPrice = (distanceInNumber * 0.21);
 console.log(ticketPrice); 
 
-// Parte b)
+// Parte b) e c)                                            OK
 
+if (passengerAgeNumber < 18) {
+
+    ticketPriceUnder = (ticketPrice * 0.8);
+    console.log(ticketPriceUnder);
+
+} else if (passengerAgeNumber >= 65) {
+
+    ticketPriceOver = (ticketPrice * 0.6);
+    console.log(ticketPriceOver);
+
+}
