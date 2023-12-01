@@ -2,8 +2,9 @@
 
     Il programma dovrà chiedere all'utente:
 
-    1) il numero di chilometri che vuole percorrere il passeggeo;
+    1) il nome del passeggero;
     2) l'età del passeggero;
+    3) il numero di chilometri che vuole percorrere il passeggeo;
 
     Sulla base di queste informazioni dovrà calcolare:
 
@@ -26,3 +27,28 @@ console.log(passengerName);
 
 const passengerAge = prompt('Inserisci la tua età:');
 console.log(passengerAge);
+
+const passengerAgeNumber = parseInt(passengerAge);
+
+if(isNaN(passengerAgeNumber)) {
+
+    alert('Perfavore inserisci solo caratteri numerici!');
+
+}
+
+// Punto 3
+
+const distance = prompt('Quanta km devi percorrere?');
+console.log(distance);
+
+const distanceInNumber = parseInt(distance);
+
+if(isNaN(distanceInNumber)) {
+
+    alert('Perfavore inserisci solo caratteri numerici!');
+
+}
+
+
+// Parte a)
+
