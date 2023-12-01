@@ -18,12 +18,12 @@
 
 */
 
-// Punto 1.                                                 OK
+// Punto 1.                                                     OK
 
 const passengerName = prompt('Inserisci il tuo Nome e il tuo Cognome:');
 console.log(passengerName);
 
-// Punto 2.                                                 OK
+// Punto 2.                                                     OK
 
 const passengerAge = prompt('Inserisci la tua età:');
 console.log(passengerAge);
@@ -49,7 +49,7 @@ if (passengerAgeNumber < 18) {
 }
 
 
-// Punto 3                                                 OK
+// Punto 3                                                    OK
 
 const distance = prompt('Quanta km devi percorrere?');
 console.log(distance);
@@ -62,30 +62,42 @@ if(isNaN(distance)) {
 }
 
 
-// Parte a)                                                 OK
+// Parte a) +  Punto 4)                                      OK
 
 let ticketPrice = (distance * 0.21);
 console.log(ticketPrice); 
 
-ticketPriceUnder = (ticketPrice * 0.8);
+let ticketPriceFixed = ticketPrice.toFixed(2);
+console.log(ticketPriceFixed);
+
+ticketPriceUnder = (ticketPriceFixed * 0.8);
 console.log(ticketPriceUnder);
 
-ticketPriceOver = (ticketPrice * 0.6);
+let ticketPriceUnderFixed = ticketPriceUnder.toFixed(2);
+console.log(ticketPriceUnderFixed);
+
+ticketPriceOver = (ticketPriceFixed * 0.6);
 console.log(ticketPriceOver);
+
+let ticketPriceOverFixed = ticketPriceOver.toFixed(2);
+console.log(ticketPriceOverFixed);
+
 
 // Parte b) e c)                                            OK
 
 if (passengerAgeNumber < 18) {
 
-    document.getElementById('your-ticket').innerHTML = ticketPriceUnder;
+    document.getElementById('your-ticket').innerHTML = ticketPriceUnderFixed;
 
 } else if (passengerAgeNumber >= 65) {
 
-    document.getElementById('your-ticket').innerHTML = ticketPriceOver;
+    document.getElementById('your-ticket').innerHTML = ticketPriceOverFixed;
     
 
 } else {
 
-    document.getElementById('your-ticket').innerHTML = ticketPrice;
+    document.getElementById('your-ticket').innerHTML = ticketPriceFixed;
     
 }
+
+
