@@ -36,7 +36,7 @@ if(isNaN(passengerAgeNumber)) {
 
 }
 
-// Punto 3
+// Punto 3                                                 OK
 
 const distance = prompt('Quanta km devi percorrere?');
 console.log(distance);
@@ -52,3 +52,5 @@ if(isNaN(distanceInNumber)) {
 
 // Parte a)
 
+let ticketPrice = (distanceInNumber * 0.21);
+console.log(ticketPrice); 
