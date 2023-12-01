@@ -81,3 +81,7 @@ if (passengerAgeNumber < 18) {
     console.log(ticketPriceOver);
 
 }
+
+// Punto 4
+
+document.getElementById('your-ticket').innerHTML = (ticketPrice);
