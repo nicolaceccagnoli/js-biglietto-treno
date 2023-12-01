@@ -31,3 +31,10 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.train {
+    background-image: url(https://media.tenor.com/Mqcj_tJv9bsAAAAC/bullet-train-movie-title.gif);
+    background-size: cover;
+    background-position:center;
+    height: 400px;
+}
+
