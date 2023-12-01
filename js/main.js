@@ -17,3 +17,8 @@
 
 */
 
+// Punto 1.                                                 OK
+
+const passengerName = prompt('Inserisci il tuo Nome:');
+console.log(passengerName);
+
