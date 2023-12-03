@@ -87,17 +87,21 @@ console.log(ticketPriceOverFixed);
 
 if (passengerAgeNumber < 18) {
 
-    document.getElementById('your-ticket').innerHTML = ticketPriceUnderFixed;
+    document.getElementById('your-ticket').innerHTML = ticketPriceUnderFixed + " €";
 
 } else if (passengerAgeNumber >= 65) {
 
-    document.getElementById('your-ticket').innerHTML = ticketPriceOverFixed;
+    document.getElementById('your-ticket').innerHTML = ticketPriceOverFixed + " €";
     
 
 } else {
 
-    document.getElementById('your-ticket').innerHTML = ticketPriceFixed;
+    document.getElementById('your-ticket').innerHTML = ticketPriceFixed + " €";
     
 }
 
+
+// Qui stampo il nome del passeggero sul biglietto
+
+document.getElementById('passenger-name').innerHTML = passengerName;
 
